@@ -4,7 +4,6 @@
     "global.mainHeading": "LQA Tester Assessment",
     "common.textareaPlaceholder": "Your response...",
     "common.wordCountBadge": "Word count: ",
-    "common.enlargeHint": "🔍 Click to enlarge",
     "timer.label": "Time Left: ",
     "timer.expiredAlert": "Time has expired! Generating your results screen.",
     "security.defaultTitle": "Access Restriction Engaged",
@@ -13,16 +12,16 @@
     "security.duplicateReason": "An active assessment workflow for this email parameter is already running inside an independent tab window context.",
     "security.mobileTitle": "Desktop Environment Required",
     "security.mobileReason": "For security compliance and layout integrity, this LQA assessment can only be completed on a desktop or laptop computer. Mobile viewports are restricted.",
-    "security.printRestrictedAlert": "Action restricted for security compliance.",
-    "security.screenshotClipboardMsg": "[Screenshot restricted for security compliance]",
-    "security.pasteRestrictedMsg": "[Paste restricted for security compliance]",
-    "security.copyRestrictedMsg": "[Copy restricted]",
-    "buttons.resetQA": "🛠️ Reset QA Session",
-    "buttons.darkMode": "🌙 Dark Mode",
-    "buttons.lightMode": "☀️ Light Mode",
-    "qaReset.confirmPrompt": "Are you sure you want to reset the QA Session? This will erase all state data.",
     "shield.protectedLabel": "Content Protected",
     "shield.instructionLabel": "Bring your cursor back inside the window to reveal the test.",
+    "buttons.resetQA": "🛠️ Reset QA Session",
+    "qaReset.confirmPrompt": "Are you sure you want to reset the QA Session? This will erase all state data.",
+    "buttons.darkMode": "🌙 Dark Mode",
+    "buttons.lightMode": "☀️ Light Mode",
+    "security.printRestrictedAlert": "Action restricted for security compliance.",
+    "security.screenshotClipboardMsg": "[Screenshot restricted for security compliance]",
+    "security.copyRestrictedMsg": "[Copy restricted]",
+    "security.pasteRestrictedMsg": "[Paste restricted for security compliance]",
     "page1.sectionTitle": "Candidate Identity Registration",
     "page1.intro": "Please provide your identification credentials below. All fields are mandatory.",
     "page1.tipAlert": "TIP: You have two hours to complete the test. It will submit automatically after that delay. Read carefully and consult the provided documentation layout.",
@@ -37,13 +36,14 @@
     "page1.alert.missingFields": "All identification parameters including Language selection are mandatory.",
     "page2.sidebar.bugTypesTitle": "BUG TYPES:",
     "page2.sidebar.reportTitle": "How to report a Bug:",
-    "page2.sidebar.reportTemplate": "Summary\\nStep to repro\\n1.\\n2.\\nObserved behavior\\nExpected behavior",
+    "page2.sidebar.reportTemplate": "Summary\\nStep to repro:\\n1.\\n2.\\nObserved behavior\\nExpected behavior",
     "page2.sectionTitle": "Section A: LQA Bugs",
     "page2.intro": "Identify structural or translation bugs from the provided gaming screenshots.",
     "page2.q1": "1. Context: The game is Cat-Fu, the devs are from Japan and you are testing in English. Find the issue.",
     "page2.q2": "2. Context: The game is LQA Tycoon, the devs are from the United States of America and you are testing in Latin.",
     "page2.q3": "3. Diagnostic Node 3.",
     "page2.q4": "4. Diagnostic Node 4.",
+    "common.enlargeHint": "🔍 Click to enlarge",
     "page2.altText.q1": "Bug Cat-Fu",
     "page2.altText.q2": "Bug LQA Tycoon",
     "page2.altText.q3": "Chart",
@@ -51,7 +51,7 @@
     "lightbox.altText": "Fullscreen Asset View",
     "page2.button.next": "Next Section →",
     "page3.sidebar.glossaryTitle": "GLOSSARY",
-    "page3.glossary.sourceColumnHeader": "EN",
+    "page3.glossary.sourceColumnHeader": "GLOSSARY",
     "page3.sectionTitle": "Section B: Proofreading/Translation",
     "page3.intro": "Review and track translation accuracy with the help of the local documentation matrix.",
     "page3.q5": "5. Proofread Segment Alpha.",
@@ -62,13 +62,13 @@
     "page4.sectionTitle": "Section C: Writing Skill",
     "page4.intro": "Assess and record writing patterns. Answer utilizing the language specified in the question prompts.",
     "page4.q8": "8. What was the last game you enjoyed the most recently? Try to tell us why (150 words).",
-    "page4.q9.cjkSuffix": "Equivalent of 250 English words (dynamically calculated based on character density)",
+    "page4.q9.cjkSuffix": "(Equivalent of 250 English words (dynamically calculated based on character density))",
     "page4.button.prev": "← Previous Section",
     "page4.button.submit": "Finish & Submit Test",
     "modal.title": "Submit Assessment",
     "modal.defaultText": "You are about to transmit your completed test file. Continue?",
     "modal.warningPrefix": "WARNING: You have not answered all questions!",
-    "modal.warningBody": "The following input fields are still empty: ",
+    "modal.warningBody": "The following input fields are still empty:",
     "modal.warningConfirm": "Are you sure you want to proceed and finalize transmission?",
     "modal.button.yes": "Yes, Send",
     "modal.button.no": "No, Back",
@@ -93,10 +93,10 @@
     "submission.error.retryButton": "Retry submission",
     "submission.error.downloadButton": "Download my responses",
     "payload.emailLabel": "Email:",
-    "payload.durationLabel": "Duration:",
-    "payload.durationUnit": "minutes",
+    "payload.durationLabel": "Duration: ... minutes",
     "payload.timeoutWarning": "AUTOMATIC SUBMISSION - TIME EXPIRED",
-    "payload.wordCountSuffix": "Word count: {n} units",
+    "payload.wordCountSuffix": "(Word count: ... units)",
+    "payload.durationUnit": "minutes",
     "payload.feedbackTitle": "Anonymous Assessment Feedback Log",
     "payload.feedback.categoriesLabel": "Identified Categories:",
     "payload.feedback.noneSelected": "None selected",
@@ -262,7 +262,7 @@
         "q6": "[KIT]l'orbe était placée un trones[color:66845]étrange [/color].[KIT]",
         "q7": "[KIT]l'orbe était placée un trones[color:66845]étrange [/color].[KIT]"
       },
-      "q9": "Quel est ton jeu vidéo préféré ? Dis-nous pourquoi.",
+      "q9": "Quel est ton jeu vidéo préféré, dis-nous pourquoi ?",
       "volumeLabel": "250 mots"
     },
     "de-DE": {
@@ -344,7 +344,7 @@
         {
           "id": "Glossary_Entry_01",
           "en": "Orb",
-          "target": "Sfera"
+          "target": "Orba"
         },
         {
           "id": "Glossary_Entry_02",
@@ -694,7 +694,7 @@
         {
           "id": "Glossary_Entry_01",
           "en": "Orb",
-          "target": "Pallo"
+          "target": "Orb"
         },
         {
           "id": "Glossary_Entry_02",
@@ -822,7 +822,7 @@
         "q6": "[KIT]El orbe fue colocado en un extraño [color:65845]trono[/color].[KIT]",
         "q7": "[KIT]El orbe fue colocado en un extraño [color:65845]trono[/color].[KIT]"
       },
-      "q9": "¿Cuál es tu videojuego favorito? Cuéntanos por qué.",
+      "q9": "¿Cuál es tu videojuego favorito, cuéntanos por qué?",
       "volumeLabel": "250 palabras"
     },
     "es-419": {
@@ -892,14 +892,14 @@
         "q6": "[KIT]El orbe fue colocado en un extraño [color:65845]trono[/color].[KIT]",
         "q7": "[KIT]El orbe fue colocado en un extraño [color:65845]trono[/color].[KIT]"
       },
-      "q9": "¿Cuál es tu videojuego favorito? Platícanos por qué.",
+      "q9": "¿Cuál es tu videojuego favorito, cuéntanos por qué?",
       "volumeLabel": "250 palabras"
     },
     "pt-PT": {
       "flag": "🇵🇹",
       "nativeName": "Português",
       "region": "Portugal (PT)",
-      "demonym": "Portuguese",
+      "demonym": "European Portuguese",
       "glossary": [
         {
           "id": "Glossary_Entry_01",
@@ -962,7 +962,7 @@
         "q6": "[KIT]O orbe foi colocado num estranho [color:65845]trono[/color].[KIT]",
         "q7": "[KIT]O orbe foi colocado num estranho [color:65845]trono[/color].[KIT]"
       },
-      "q9": "Qual é o teu videojogo preferido? Diz-nos porquê.",
+      "q9": "Qual é o teu jogo de videojogos favorito, diz-nos porquê?",
       "volumeLabel": "250 palavras"
     },
     "pt-BR": {
@@ -1809,7 +1809,7 @@
       "flag": "🇨🇳",
       "nativeName": "简体中文",
       "region": "Simplified Chinese",
-      "demonym": "Simplified Chinese",
+      "demonym": "Chinese (Simplified)",
       "glossary": [
         {
           "id": "Glossary_Entry_01",
@@ -1878,7 +1878,7 @@
       "flag": "🇹🇼",
       "nativeName": "繁體中文",
       "region": "Taiwan (TW)",
-      "demonym": "Traditional Chinese (Taiwan)",
+      "demonym": "Chinese (Traditional)",
       "glossary": [
         {
           "id": "Glossary_Entry_01",
@@ -1947,7 +1947,7 @@
       "flag": "🇭🇰",
       "nativeName": "繁體中文",
       "region": "Hong Kong (HK)",
-      "demonym": "Traditional Chinese (Hong Kong)",
+      "demonym": "Cantonese",
       "glossary": [
         {
           "id": "Glossary_Entry_01",
@@ -2368,7 +2368,7 @@
         {
           "id": "Glossary_Entry_01",
           "en": "Orb",
-          "target": "Bola"
+          "target": "Orb"
         },
         {
           "id": "Glossary_Entry_02",
